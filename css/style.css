@@ -1,0 +1,99 @@
+
+body {
+    font-family: 'roboto', sans-serif;
+    background-color: #2c3e50; /* Navy Blue */
+    color: #ecf0f1; /* Light Gray */
+}
+
+.navbar {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+h1.welcome-text {
+    font-size: 3rem;
+    color: #d2d1d1;
+    font-weight: bold;
+}
+
+.btn {
+    display: middle;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    background-color: #2980b9; /* Light Blue */
+    color: #c1fbdb;
+}
+
+.btn:hover {
+    background-color: #2cb3c8; /* Lighter green on hover */
+}
+
+
+.card {
+    margin-bottom: 20px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    color: #ffffff;
+    background-color: #52708e;
+}
+
+.card-img-top {
+    height: 500px;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+}
+.card-img-top:hover {
+    transform: scale(1.05); /* Zoom effect on hover */
+}
+
+.hometown-img {
+    max-width: 100%; 
+    height: auto; 
+    border-radius: 15px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    display: block; 
+    margin: 0 auto; 
+    transition: transform 0.3s ease-in-out;
+}
+.hometown-img:hover {
+    transform: scale(1.05); /* Zoom effect on hover */
+}
+
+.hometown {
+    overflow: hidden; 
+}
+
+h2 {
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.1rem;
+}
+
+@media (max-width: 768px) {
+    .card-img-top {
+        height: auto;
+    }
+    .navbar {
+        padding: 10px;
+    }
+    h1.welcome-text {
+        font-size: 2.5rem;
+    }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+.welcome-text {
+    animation: fadeIn 1.5s ease-in-out;
+}
+
